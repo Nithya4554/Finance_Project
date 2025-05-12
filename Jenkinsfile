@@ -16,22 +16,11 @@ pipeline {
                 }
             }
         }
-         
-        
-     stage('Deploy') {
-            steps {
-                sh 'sudo docker run -itd --name My-first-containe21211 -p 8083:8081 nithya45/projectfinance:v1'
-                  
-                }
-            }
-        }
-
         stage('Deploy') {
             steps {
                 sh 'sudo docker run -itd --name My-first-containe21211 -p 8083:8081 nithya45/projectfinance:v1'
                   
                 }
             }
-        
     }
 }
